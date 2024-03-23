@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "Post Example";
 ---
 
 <html lang="en">
@@ -8,12 +8,13 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Post</title>
+		<title>{ pageTitle }</title>
 	</head>
 	<body>
         <a href="/">Home</a>
+		<a href="/about">About Me</a>
         <a href="/blog">Blog</a>
-		<h1>Post</h1>
+		<h1>{ pageTitle }</h1>
         <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
 	</body>
 </html>
