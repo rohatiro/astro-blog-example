@@ -1,0 +1,16 @@
+:root {
+    --bodyColor: #cfdfef;
+}
+
+* {
+    box-sizing: border-box;
+    min-height: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bodyColor);
+}
