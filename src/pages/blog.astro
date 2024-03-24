@@ -1,43 +1,21 @@
 ---
 import "../styles/global.css";
-import Footer from "../components/footer.astro";
-import Header from "../components/header.astro";
+import Baselayout from "../layouts/baselayout.astro";
 
 const pageTitle = "Blog";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{ pageTitle }</title>
-	</head>
-	<body>
-        <Header />
-		
-		<main>
-			<h1>{ pageTitle }</h1>
-					
-					<p>Blog page for the project</p>
-			
-					<p>Here will be showing the posts of the Blog</p>
-					
-					<ul>
-						<li>
-							<a href="/posts/post">Post</a>
-						</li>
-				<li>
-					<a href="/posts/post1">Post1</a>
-				</li>
-					</ul>
-		</main>
+<Baselayout pageTitle={ pageTitle }>
+	<p>Blog page for the project</p>
 
-		<Footer />
+	<p>Here will be showing the posts of the Blog</p>
 
-		<script>
-			import "./../scripts/menu.js";
-		</script>
-	</body>
-</html>
+	<ul>
+		<li>
+			<a href="/posts/post">Post</a>
+		</li>
+		<li>
+			<a href="/posts/post1">Post1</a>
+		</li>
+	</ul>
+</Baselayout>
