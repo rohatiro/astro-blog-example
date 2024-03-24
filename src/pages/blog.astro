@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
-import Navigation from "../components/navigation.astro";
 import Footer from "../components/footer.astro";
+import Header from "../components/header.astro";
 
 const pageTitle = "Blog";
 ---
@@ -15,22 +15,25 @@ const pageTitle = "Blog";
 		<title>{ pageTitle }</title>
 	</head>
 	<body>
-        <Navigation />
+        <Header />
 		
-		<h1>{ pageTitle }</h1>
-        
-        <p>Blog page for the project</p>
+		<main>
+			<h1>{ pageTitle }</h1>
+					
+					<p>Blog page for the project</p>
+			
+					<p>Here will be showing the posts of the Blog</p>
+					
+					<ul>
+						<li>
+							<a href="/posts/post">Post</a>
+						</li>
+				<li>
+					<a href="/posts/post1">Post1</a>
+				</li>
+					</ul>
+		</main>
 
-        <p>Here will be showing the posts of the Blog</p>
-        
-        <ul>
-            <li>
-                <a href="/posts/post">Post</a>
-            </li>
-			<li>
-				<a href="/posts/post1">Post1</a>
-			</li>
-        </ul>
 		<Footer />
 	</body>
 </html>

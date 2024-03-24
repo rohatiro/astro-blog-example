@@ -8,9 +8,58 @@
 }
 
 html {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
 body {
+    display: flex;
     background-color: var(--bodyColor);
+    margin: 0;
+    flex-direction: column;
+}
+
+.nav-links {
+    display: none;
+    background-color: #ff9776;
+}
+
+.nav-links a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background-color: #ff9776;
+}
+
+.expanded {
+    display: unset;
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
+}
+
+@media (width >= 636px) {
+    .nav-links {
+        display: block;
+        position: static;
+        background: none;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
 }
