@@ -1,8 +1,36 @@
 ---
+import Social from "../components/social.astro";
+
 const platform = "github";
 const username = "withastro";
 ---
 
 <footer>
     <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+
+    <p>Check my other social media:</p>
+
+    <ul>
+        <li>
+            <Social url="https://www.x.com/rohatiro_" text="X(Twitter)" />
+        </li>
+        <li>
+            <Social url="https://www.linkedin.com/in/roberto-tienda/" text="LinkedIn" />
+        </li>
+    </ul>
+
 </footer>
+
+<style>
+    footer {
+        margin-top: 1rem;
+    }
+
+    ul {
+        display: flex;
+        column-gap: 10px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+</style>
