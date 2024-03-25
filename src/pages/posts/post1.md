@@ -10,10 +10,6 @@ image:
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-[Home](/)
-[About Me](/about)
-[Blog](/blog)
-
 # First Post
 
 ## Idea
